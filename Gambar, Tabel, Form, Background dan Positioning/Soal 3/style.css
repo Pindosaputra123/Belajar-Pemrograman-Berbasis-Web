@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    overflow: hidden;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); /* Membuat tinggi setiap baris sama */
+    gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    padding: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Pastikan gambar memenuhi ruang tanpa ada bagian kosong */
+    border-radius: 10px;
+}
