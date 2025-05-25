@@ -1,0 +1,3 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^mobil/?$ mobil.php [NC,L]
+RewriteRule ^mobil/([0-9]+)/?$ mobil.php?id=$1 [NC,L]
